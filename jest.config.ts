@@ -1,11 +1,6 @@
-import type { Config } from "jest";
+require('ts-node/register');
 
-const config: Config = {
-  preset: "ts-jest",
-  testEnvironment: "node",
-  rootDir: ".", // ensures Jest looks from project root
-  testMatch: ["<rootDir>/tests/**/*.spec.ts"],
-  moduleFileExtensions: ["ts", "js", "json"],
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
 };
-
-export default config;
