@@ -1,11 +1,7 @@
-require('ts-node/register');
+import { describe, it, expect } from '@jest/globals';
 
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-};
-
-const assert = require('assert');
-test('hello world!', () => {
-  assert.strictEqual(1 + 1, 2);
+describe('Hello World Test', () => {
+  it('should return true', () => {
+    expect(true).toBe(true);
+  });
 });

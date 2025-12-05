@@ -1,28 +1,11 @@
 {
   "compilerOptions": {
-    /* ---- Core ---- */
-    "target": "ES2020",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-
-    /* ---- Paths + Imports ---- */
-    "baseUrl": ".",
-    "rootDir": ".",
-    "outDir": "dist",
-
-    /* ---- Strict Mode ---- */
+    "target": "es6",
+    "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-
-    /* ---- Jest Support ---- */
-    "types": ["jest", "node"],
-
-    /* ---- Remove comments from build ---- */
-    "removeComments": true
-  },
-
-  /* Include source + test files */
-  "include": ["src", "tests", "jest.config.ts"]
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "jest"]
+  }
 }
